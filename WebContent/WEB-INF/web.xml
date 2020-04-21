@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ComputerTeachManage</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.ysu.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.ysu.web.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>UploadServlet</servlet-name>
+   <servlet-class>com.ysu.web.FileUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>UploadServlet</servlet-name>
+  <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.ysu.web.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <servlet-name>ModifyPwdServlet</servlet-name>
+    <servlet-class>com.ysu.web.ModifyPwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyPwdServlet</servlet-name>
+    <url-pattern>/modifyPwd</url-pattern>
+  </servlet-mapping> 
+  
+  
+  <servlet>
+   <servlet-name>studentListServlet</servlet-name>
+   <servlet-class>com.ysu.web.StudentListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>studentListServlet</servlet-name>
+  <url-pattern>/studentList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>teacherInfoModifyServlet</servlet-name>
+   <servlet-class>com.ysu.web.TeacherInfoModifyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>teacherInfoModifyServlet</servlet-name>
+  <url-pattern>/teacherInfoModify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>StudentInfoModifyServlet</servlet-name>
+   <servlet-class>com.ysu.web.StudentInfoModifyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>StudentInfoModifyServlet</servlet-name>
+  <url-pattern>/studentInfoModify</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>ResetPwdServlet</servlet-name>
+    <servlet-class>com.ysu.web.ResetPwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResetPwdServlet</servlet-name>
+    <url-pattern>/resetPwd</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description></description>
+    <servlet-name>FindPwdServlet</servlet-name>
+    <servlet-class>com.ysu.web.FindPwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindPwdServlet</servlet-name>
+    <url-pattern>/findpwd</url-pattern> 
+  </servlet-mapping> 
+  
+  <servlet>
+    <description></description>
+    <servlet-name>SaveScoreServlet</servlet-name>
+    <servlet-class>com.ysu.web.SaveScoreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveScoreServlet</servlet-name>
+    <url-pattern>/saveScore</url-pattern>
+  </servlet-mapping> 
+</web-app>
